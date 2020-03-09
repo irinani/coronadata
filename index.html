@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Corona</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Finland's Corona cases</h1>
+            <h2>Status:</h2>
+            <table class="cases-status">
+                <tr>
+                    <th>Total cases:</th>
+                    <td>
+                        <span class="js-cases-count"></span></td>
+                </tr>
+                <tr>
+                    <th>Deaths:</th>
+                    <td><span class="js-deaths-count"></span></td>
+                </tr>
+            </table>
+            <hr>
+            <h2>Sort by:</h2>
+            <div class="buttons d-flex flex-wrap">
+                <button type="button" class="js-sort-by-name active">Patient name</button>
+                <button type="button" class="js-sort-by-date">Infection date</button>
+                <button type="button" class="js-sort-by-area">Infection area</button>
+                <button type="button" class="js-sort-by-origin">Infection origin</button>
+                <button type="button" class="js-sort-by-source">Infection source</button>
+                <button type="button" class="js-sort-by-infected">Infected patients</button>
+            </div>
+            <div class="case-list js-corona-cases d-flex flex-wrap"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container text-center">
+            <p>Data: <a href="https://github.com/HS-Datadesk/koronavirus-avoindata">HS-Datadesk</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
